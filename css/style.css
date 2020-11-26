@@ -1,0 +1,167 @@
+/* -----------------------------------------------------------------------
+  Table of Contents
+
+  1. General Setup
+    1.1 Global Variables
+    1.2 HTML
+    1.3 Utility Classes
+    1.4 Headers
+    1.5 Buttons
+    1.6 Links
+    1.7 Images
+    1.8 Lists
+    1.9 Forms
+
+  2. Header
+
+  3. Main
+
+  4. Footer
+
+  Appendix
+
+  A. Main Navigation
+  B. Banner
+
+  -----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+  1. General Setup
+ */
+
+/* 1.1 Global Variables */
+:root {
+
+  /* Font Families */
+  
+  --monoFF: 'Source Code Pro', 'Lucida Sans Unicode', monospace;
+  --typeFF: 'Trirong', serif;
+
+  /* Colours */
+  --magMain: #cf1591;
+  --magDark: #990066;
+  --tanMain: #ffc963;
+  --tanMinus90: #fff4df;
+  --greenMain: #168f00;
+  --blueMain: #0a60cf;
+}
+
+/* 1.2 HTML */
+html {
+  box-sizing:border-box;
+}
+
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+
+body {
+  margin:0; /* remove gap around body perimeter */
+  background-color: var( --magMain );
+}
+
+/*justify-content: horizontal alignment */
+/*  flex-start: == left */
+/*  flex-end: == right */
+/*  center: == center */
+/*  space-between: == equal space between */
+/*  space-around: == equal space around */
+
+/*align-items: vertical alignment */
+/*  flex-start: == top */
+/*  flex-end: == bottom */
+/*  center: == center */
+/*  baseline: Items display at the baseline of the container.*/
+/*  stretch: Items are stretched to fit the container.*/
+
+/*flex-direction:*/
+/*  row: Items are placed the same as the text direction.*/
+/*  row-reverse: Items are placed opposite to the text direction.*/
+/*  column: Items are placed top to bottom.*/
+/*  column-reverse: Items are placed bottom to top.*/
+
+  /* 1.3 Utility Classes */
+.hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+}
+
+.headerBar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: var( --monoFF );
+}
+
+.headerBar .logo {
+  padding: .5em 1em;
+  width: 20%;
+}
+
+.headerBar .menu {
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+
+  padding-right: 1.5em;
+
+  letter-spacing: .2em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.headerBar .magAccent {
+  color: var( --magDark );
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+.banner {
+  font-family: var( --monoFF );
+  margin-left: 10%;
+}
+
+.banner span {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+.banner h1 {
+  line-height: 1em;
+  margin: 1em 0 0 0;
+  text-transform: uppercase;
+}
+
+.banner .magAccent {
+  color: var( --magDark );
+}
+
+.banner h1 .magAccent {
+  font-size: 1.8em;
+}
+
+nav {
+  display: flex;
+  flex-flow: column;
+  margin-left: 2em;
+}
+
+nav .magAccent {
+  font-size: 1.8em;
+}
+
+
+.serif {
+  font-family: var( --typeFF );
+}
+
+a:link {
+  text-decoration: none;
+}
+
