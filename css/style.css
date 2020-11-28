@@ -41,8 +41,9 @@
   --magMain: #cf1591;
   --magDark: #990066;
   --tanMain: #ffc963;
+  --tanDark: #ffd890;
   --tanMinus90: #fff4df;
-  --greenMain: #168f00;
+  --greenMain: #16bf00;
   --blueMain: #0a60cf;
 }
 
@@ -56,31 +57,11 @@ html {
 }
 
 body {
-  margin:0; /* remove gap around body perimeter */
-  background-color: var( --magMain );
+  margin: 0 auto; /* remove gap around body perimeter */
+  max-width: 1200px;
 }
 
-/*justify-content: horizontal alignment */
-/*  flex-start: == left */
-/*  flex-end: == right */
-/*  center: == center */
-/*  space-between: == equal space between */
-/*  space-around: == equal space around */
-
-/*align-items: vertical alignment */
-/*  flex-start: == top */
-/*  flex-end: == bottom */
-/*  center: == center */
-/*  baseline: Items display at the baseline of the container.*/
-/*  stretch: Items are stretched to fit the container.*/
-
-/*flex-direction:*/
-/*  row: Items are placed the same as the text direction.*/
-/*  row-reverse: Items are placed opposite to the text direction.*/
-/*  column: Items are placed top to bottom.*/
-/*  column-reverse: Items are placed bottom to top.*/
-
-  /* 1.3 Utility Classes */
+/* 1.3 Utility Classes */
 .hidden {
   position: absolute;
   left: -10000px;
@@ -88,6 +69,43 @@ body {
   height: 1px;
 }
 
+.background {
+  background-color: var( --magMain );
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+}
+
+
+.accent {
+  font-family: var( --monoFF );
+  font-weight: bold;
+}
+
+.darkMag {
+  color: var( --magDark );
+}
+
+.darkTan {
+  color: var( --tanDark );
+}
+
+.headerName {
+  font-family: var( --typeFF );
+  font-style: bold;
+}
+
+
+/* ---------------------------------------------------------------------
+    Header
+  ---------------------------------------------------------------------- */
 .headerBar {
   background-color: black;
   color: white;
@@ -96,9 +114,12 @@ body {
   font-family: var( --monoFF );
 }
 
+.headerBar .imageDiv {
+  margin: 25px 0 25px 5%;
+}
+
 .headerBar .logo {
-  padding: .5em 1em;
-  width: 20%;
+  height: 112px;
 }
 
 .headerBar .menu {
@@ -106,62 +127,247 @@ body {
   align-items: center;
   justify-self: flex-end;
 
-  padding-right: 1.5em;
-
-  letter-spacing: .2em;
-  font-size: 1.3em;
+  font-size: 40px;
   font-weight: bold;
+  margin-right: 5%;
 }
 
-.headerBar .magAccent {
-  color: var( --magDark );
-  font-size: 1em;
-  font-weight: bold;
-  letter-spacing: normal;
+.separatorBlue {
+  height: 20px;
+  background-color: var( --blueMain );
 }
 
+.separatorGreen {
+  height: 10px;
+  background-color: var( --greenMain );
+}
+
+/* ---------------------------------------------------------------------
+    Banner
+  ---------------------------------------------------------------------- */
 .banner {
-  font-family: var( --monoFF );
-  margin-left: 10%;
-}
+  margin: 50px 0 0 10%;
+} 
 
+/* Color, weight, spacing of text in main nav. */
 .banner span {
   color: white;
-  font-size: 2em;
   font-weight: bold;
-  letter-spacing: .1em;
+}
+
+.banner .darkMag {
+  font-family: var( --monoFF ); 
+  color: var( --magDark );
 }
 
 .banner h1 {
-  line-height: 1em;
-  margin: 1em 0 0 0;
+  font-size: 72px;
+  line-height: 72px;
+  margin: 0;
   text-transform: uppercase;
 }
 
-.banner .magAccent {
-  color: var( --magDark );
-}
-
-.banner h1 .magAccent {
-  font-size: 1.8em;
+.banner h1 .accent {
+  font-size: 60px;
 }
 
 nav {
   display: flex;
   flex-flow: column;
-  margin-left: 2em;
+  font: bold 48px var( --monoFF ); 
 }
 
-nav .magAccent {
-  font-size: 1.8em;
+nav .function {
+  margin-left: 5%;
+}
+
+/* ---------------------------------------------------------------------
+    Main
+  ---------------------------------------------------------------------- */
+
+main h3 {
+  margin: 0;
+}
+
+main nav {
+  font-size: 36px;
+  width: 35%;
+}
+
+section .function {
+  margin-left: 20%;
+}
+
+.sectionHeader {
+  font-size: 60px;
+  line-height: 0;
+}
+
+.sectionHeader .accent {
+  font-style: 48px;
+}
+
+.creamTri {
+  max-width: 100%;
+}
+
+.navRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: -43%;
+  width: 100%;
+}
+
+.navRight .sectionHeader {
+  color: black;
+}
+
+.navRight .function {
+  color: black;
+}
+
+.navLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 175px;
+  width: 100%;
+}
+
+.navLeft .sectionHeader {
+  color: white;
+}
+
+.navLeft .function {
+  color: white;
+}
+
+.navLeft nav {
+  padding-left: 10%;
+  padding-top: 20px;
+}
+
+.contentNavDivider {
+  width: 10%;
+}
+
+.content {
+  font: 32px/40px var( --typeFF );
+  margin-top: 40px;
+  width: 55%;
+}
+
+.navRight .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* ---------------------------------------------------------------------
+    Code
+  ---------------------------------------------------------------------- */
+#codeSection {
+  margin-top: -175px;
+}
+
+#solveSection {
+  margin-top: -90px;
+}
+
+#playSection {
+  margin-top: -60px;
+}
+
+#playSection nav {
+  margin-top: -20px;
+}
+
+.bioDiv {  
+ display: flex;
+ flex-direction: row;
+ margin: 3% 0;
+}
+.bio {
+  font: 32px/40px var( --typeFF );
+  max-width: 30%;
+  margin: 0 10%;
+}
+
+.p {
+  padding: 20px 0;
+}
+
+.headshotDiv img {
+  height: 200px;
+  margin-top: 40%;
+}
+
+#contactSection {
+  margin-top: -140px;
+}
+
+.contact {
+  margin-top: -350px;
+  padding-left: 10%;
+}
+
+.contact form {
+  font: bold 30px var( --monoFF ); 
+  padding-top: 20px;
+}
+
+.contact .prop {
+  padding-left: 5%;
+}
+
+input {
+  background-color: fff4df;
+  border: none;
+  font: bold 30px var( --monoFF ); 
+  padding: 5px;
+  margin: 5px 0;
+}
+
+#nameInput {
+  width: 70%;
+}
+
+#emailInput {
+  width: 68.4%;
+}
+
+.messageDiv * {
+  vertical-align: top;
+}
+
+#messageInput {
+  background-color: fff4df;
+  border: none;
+  font: bold 24px var( --monoFF ); 
+  padding: 5px;
+  margin: 5px 0;
+  width: 65%;
+  display: inline;
+}
+
+.messageAccent {
+  float: right;
+}
+/* .contact span {
+  color: white;
+  font-weight: bold;
+}
+
+.contact .darkMag {
+  font-family: var( --monoFF ); 
+  color: var( --magDark );
 }
 
 
-.serif {
-  font-family: var( --typeFF );
-}
-
-a:link {
-  text-decoration: none;
-}
+.contact h3 .accent {
+  font-size: 60px;
+} */
 

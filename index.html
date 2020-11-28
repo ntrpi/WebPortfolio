@@ -11,53 +11,195 @@
 </head>
 <body>
 <!-- Header -->
-<header>
+<header class="background">
   <div>
     <div class="headerBar">
       <div class="imageDiv">
         <a href="./index.html"><img class="logo" src="./images/LogoWhite.png" alt="SKDS logo." /></a>
       </div>
       <div class="menu">
-        <div class="magFunction">Menu</div>
-        <div class="magAccent">{...}</div>
+        <div class="">Menu</div>
+        <div class="accent darkMag">{...}</div>
       </div>
     </div>
+    <div class="separatorBlue"></div>
+    <div class="separatorGreen"></div>
   </div>
   <div class="banner">
-    <h1>
-      <a href="./index.html">
-        <span class="serif">Sandra_Kupfer</span><span class="magAccent">()</span>
+    <nav>
+      <h1>
+        <a href="./index.html">
+          <span class="headerName">Sandra_Kupfer</span><span class="accent darkMag">()</span>
+        </a>
+      </h1>
+      <span class="accent darkMag">{</span>
+      <a href="#codeSection">
+        <span class="function">Code</span><span class="accent darkMag">();</span>
       </a>
-    </h1>
-    <div>
-      <span class="magAccent">{</span>
-        <nav>
-          <a href="#codeSection">
-            <span>Code</span><span class="magAccent">();</span>
-          </a>
-          <a href="#solveSection">
-            <span>Solve</span><span class="magAccent">();</span>
-          </a>
-          <a href="#playSection">
-            <span>Play</span><span class="magAccent">();</span>
-          </a>
-          <a href="#bioSection" class="hidden">
-            <span>Bio</span>
-          </a>
-          <a href="#contactSection" class="hidden">
-            <span>Contact</span>
-          </a>
-        </nav>
-        <span class="magAccent">}</span>
-        </div>
+      <a href="#solveSection">
+        <span class="function">Solve</span><span class="accent darkMag">();</span>
+      </a>
+      <a href="#playSection">
+        <span class="function">Play</span><span class="accent darkMag">();</span>
+      </a>
+      <a href="#bioSection" class="hidden">
+        <span>Bio</span>
+      </a>
+      <a href="#contactSection" class="hidden">
+        <span>Contact</span>
+      </a>
+      <span class="accent darkMag">}</span>
+    </nav>
   </div>
 </header>
-<main>
-  <section id="codeSection"></section>
-  <section id="solveSection"></section>
-  <section id="playSection"></section>
-  <section id="bioSection"></section>
-  <section id="contactSection"></section>
+<main class="background">
+  <div class="mainStuff">
+    <section id="codeSection">
+      <div>
+        <img class="creamTri codeTri" src="./images/DesktopTri.png" alt="Cream coloured triangle with black, blue, and green edges as a background image." />
+      </div>
+      <div class="navRight">
+        <div class="content">
+            <div>I have a degree</div>
+            <div>in comp sci and years of</div>
+            <div>dev experience. Check out</div>
+            <div>some of my</div>
+            <div>stuff.</div>
+        </div>
+        <div class="contentNavDivider"></div>
+        <nav>
+          <h3>
+            <a href="./code.html">
+              <span class="headerName sectionHeader">Code</span><span class="accent darkTan">()</span>
+            </a>
+          </h3>
+          <div class="accent darkTan">{</div>
+          <a href="./code.html#web">
+            <span class="function">Web</span><span class="accent  darkTan">;</span>
+          </a>
+          <a href="./code.html#mobile">
+            <span class="function">Mobile</span><span class="darkTan">;</span>
+          </a>
+          <a href="./code.html#more">
+            <span class="function">More</span><span class="accent darkTan">;</span>
+          </a>
+          <div class="accent darkTan">}</div>
+        </nav>
+      </div>
+    </section>
+    <section id="solveSection">
+      <div class="navLeft">
+        <nav>
+          <h3>
+            <a href="./solve.html">
+              <span class="headerName sectionHeader">Solve</span><span class="accent darkMag">()</span>
+            </a>
+          </h3>
+          <div class="accent darkMag">{</div>
+          <a href="./solve.html#protect">
+            <span class="function">Protect</span><span class="accent  darkMag">;</span>
+          </a>
+          <a href="./solve.html#produce">
+            <span class="function">Produce</span><span class="darkMag">;</span>
+          </a>
+          <div class="accent darkMag">}</div>
+        </nav>
+        <div class="contentNavDivider"></div>
+        <div class="content">
+          <div>I often</div>
+          <div>take on new</div>
+          <div>challenges. Here are</div>
+          <div>a couple of ways I</div>
+          <div>have done that.</div>
+        </div>
+      </div>
+    </section>
+    <section id="playSection">
+      <div>
+        <img class="creamTri codeTri" src="./images/DesktopTri.png" alt="Cream coloured triangle with black, blue, and green edges as a background image." />
+      </div>
+      <div class="navRight">
+        <div class="content">
+            <div>I like to</div>
+            <div>create. Have a</div>
+            <div>look at what I've taught</div>
+            <div>myself to do over</div>
+            <div>the years.</div>
+        </div>
+        <div class="contentNavDivider"></div>
+        <nav>
+          <h3>
+            <a href="./play.html">
+              <span class="headerName sectionHeader">Play</span><span class="accent darkTan">()</span>
+            </a>
+          </h3>
+          <div class="accent darkTan">{</div>
+          <a href="./play.html#paint">
+            <span class="function">Paint</span><span class="accent  darkTan">;</span>
+          </a>
+          <a href="./play.html#bake">
+            <span class="function">Bake</span><span class="darkTan">;</span>
+          </a>
+          <a href="./play.html#sew">
+            <span class="function">Sew</span><span class="accent darkTan">;</span>
+          </a>
+          <a href="./play.html#make">
+            <span class="function">Make</span><span class="accent darkTan">;</span>
+          </a>
+          <div class="accent darkTan">}</div>
+        </nav>
+      </div>
+    </section>
+    <section id="bioSection">
+      <div class="bioDiv">
+        <div class="bio">
+          <div class="p">Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.
+          </div>
+          <div class="p">- Ferris Bueller</div>
+        </div>
+        <div class="headshotDiv">
+          <img src="./images/headshots/square/HeadShot1.png" alt="Headshot of Sandra Kupfer looking happy.">
+        </div>
+      </div>  
+    </section>
+    <section id="contactSection">
+      <div>
+        <img class="creamTri codeTri" src="./images/ContactTri.png" alt="Cream coloured polygon with black, blue, and green edges as a background image." />
+      </div>
+      <h2 class="hidden"></h2>
+      <div class="contact">
+        <h3 class="sectionHeader">
+          <span>Contact_Me</span><span class="accent darkTan">()</span>
+        </h3>
+        <form action="" method="get">
+          <div class="accent darkTan">{</div>
+          <div>
+            <label for="nameInput" class="prop">
+              <span>Name</span><span class="accent darkTan">:</span>
+            </label>
+            <input type="text" name="nameInput" id="nameInput" class="contactInput"/><span class="darkTan">;</span>
+          </div>
+          <div>
+            <label for="emailInput" class="prop">
+              <span>Email</span><span class="accent darkTan">:</span>
+            </label>
+            <input type="text" name="emailInput" id="emailInput" class="contactInput"/><span class="darkTan">;</span>
+          </div>
+          <div class="messageFlex">
+            <div class="messageDiv">
+              <label for="messageInput" class="prop">
+                <span>Message</span><span class="accent darkTan">:</span>
+              </label>
+              <textarea name="messageInput" id="messageInput" cols="40" rows="3" class="contactInput"></textarea>
+            </div>
+            <span class="messageAccent darkTan">;</span>
+          </div>
+          <div class="accent darkTan">}</div>
+        </form>
+  
+      </div>
+    </section>
+  </div>
 </main>
 </body>
 </html>
