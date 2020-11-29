@@ -198,8 +198,6 @@ nav .function {
 /* ---------------------------------------------------------------------
     Main
   ---------------------------------------------------------------------- */
-
-
 main h3 {
   margin: 0;
 }
@@ -219,7 +217,7 @@ section .function {
 }
 
 .sectionHeader .accent {
-  font-style: 48px;
+  font-size: 48px;
 }
 
 .navRight {
@@ -276,7 +274,7 @@ section .function {
 }
 
 /* ---------------------------------------------------------------------
-    Code
+    Sections  
   ---------------------------------------------------------------------- */
 #codeSection {
   margin-top: 20px;
@@ -370,3 +368,168 @@ input {
 footer {
   margin-top: 20px;
 }
+
+/* ---------------------------------------------------------------------
+    max-width: 1090px
+  ---------------------------------------------------------------------- */
+@media only screen and (max-width: 1090px) {
+  #contactSection {
+    margin-top: 210px;
+  }
+
+  .navRight nav {
+    padding-left: 50px;
+  }
+}
+
+/* ---------------------------------------------------------------------
+    max-width: 895px
+  ---------------------------------------------------------------------- */
+  @media only screen and (max-width: 895px) {
+  #contactSection {
+    margin-top: 160px;
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+  
+  .navRight nav {
+    padding-left: 50px;
+  }
+
+}
+
+/* ---------------------------------------------------------------------
+    max-width: 768px
+  ---------------------------------------------------------------------- */
+  @media only screen and (max-width: 768px) {
+
+  html {
+    height: 2020px;
+  }
+
+  header {
+    margin-top: -2020px;
+  }
+  
+  .background {
+    background-image:url(../images/TabletTris.png);
+  }  
+
+  /* Header */
+  .menuBar .imageDiv {
+    margin: 12px 15px;
+  }  
+
+  .menuBar .logo {
+    height: 60px;
+  }
+
+  .menuBar .menu {
+    font-size: 24px;
+    margin-right: 3%;
+  }
+
+  .separatorBlue {
+    height: 12px;
+  }
+  
+  .separatorGreen {
+    height: 6px;
+  }
+
+  /* Banner */
+  .banner {
+    margin: 30px 0 0 10%;
+  } 
+  
+  .banner h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  
+  .banner h1 .accent {
+    font-size: 36px;
+  }
+  
+  nav {
+    font-size: 28px; 
+  }
+
+  /* Main */
+  main nav {
+    font-size: 26px;
+  }
+  
+  .sectionHeader {
+    font-size: 36px;
+  }
+  
+  .sectionHeader .accent {
+    font-size: 32px;
+  }
+  
+  .content {
+    font: 26px/30px var( --typeFF );
+  }
+
+  /* Sections */
+  #codeSection {
+    margin-top: 10px;
+  }
+
+  #solveSection {
+    margin-top: 70px;
+  }
+
+  #playSection {
+    margin-top: 100px;
+  }
+
+  #bioSection {
+    margin-top: 30px;
+  }
+
+  .bio {
+    font: 26px/30px var( --typeFF );
+  }
+
+  .headshotDiv img {
+    height: 150px;
+    margin-top: 50%;
+  }
+  
+  #contactSection {
+    margin-top: 150px;
+  }
+  
+  .contact form {
+    font-size: 26px; 
+    padding-top: 10px;
+  }
+
+  input {
+    font-size: 26px; 
+  }
+
+  #nameInput {
+    width: 72%;
+  }
+  
+  #emailInput {
+    width: 69.5%;
+  }
+    
+  #messageInput {
+    font-size: 20px; 
+    height: 4em;
+  }
+}
+
+/* ---------------------------------------------------------------------
+    max-width: 320px
+  ---------------------------------------------------------------------- */
+  @media only screen and (max-width: 320) {
+  }
+  
