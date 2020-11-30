@@ -91,6 +91,64 @@ a:link {
   text-decoration: none;
 }
 
+/* a:link {
+  animation: whiteAnimation 5s infinite;
+}
+
+a:link .accent {
+  animation: magAnimation 5s infinite;
+}
+
+.navRight a:link {
+  animation: blackAnimation 5s infinite;
+}
+
+.navRight a:link .accent {
+  animation: tanAnimation 5s infinite;
+}
+
+@keyframes whiteAnimation {
+  30% {
+     text-shadow: 0px 0px 3px white;
+  }
+}
+
+@keyframes magAnimation {
+  30% {
+     text-shadow: 0px 0px 3px var( --magDark );
+  }
+}
+
+@keyframes blackAnimation {
+  30% {
+     text-shadow: 0px 0px 1px black;
+  }
+}
+
+@keyframes tanAnimation {
+  30% {
+     text-shadow: 0px 0px 3px var( --tanMain );
+  }
+} */
+
+
+a:hover {
+  text-shadow: 0px 0px 3px #fff;
+}
+
+a:hover .accent {
+  text-shadow: 0px 0px 3px var( --magDark );
+}
+
+.navRight a:hover {
+  text-shadow: 0px 0px 1px #333;
+}
+
+.navRight a:hover .accent {
+  text-shadow: 0px 0px 3px var( --tanDark );
+}
+
+
 .wrapper {
   display: flex;
   flex-flow: column;
@@ -195,6 +253,8 @@ nav .function {
   margin-left: 5%;
 }
 
+
+
 /* ---------------------------------------------------------------------
     Main
   ---------------------------------------------------------------------- */
@@ -205,6 +265,14 @@ main h3 {
 main nav {
   font-size: 36px;
   width: 35%;
+}
+
+#codeNarrow {
+  display: none;
+}
+
+#playNarrow {
+  display: none;
 }
 
 section .function {
@@ -277,7 +345,7 @@ section .function {
     Sections  
   ---------------------------------------------------------------------- */
 #codeSection {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #solveSection {
@@ -285,11 +353,11 @@ section .function {
 }
 
 #playSection {
-  margin-top: 165px;
+  margin-top: 145px;
 }
 
 #bioSection {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .bio {
@@ -311,7 +379,6 @@ section .function {
   height: 200px;
   margin-top: 40%;
 }
-
 
 #contactSection {
   margin-top: 250px;
@@ -339,11 +406,11 @@ input {
 }
 
 #nameInput {
-  width: 70%;
+  width: 72%;
 }
 
 #emailInput {
-  width: 68.4%;
+  width: 70.3%;
 }
 
 .messageDiv * {
@@ -356,17 +423,16 @@ input {
   font: bold 24px var( --monoFF ); 
   padding: 5px;
   margin: 5px 0;
-  width: 65%;
+  width: 67%;
   display: inline;
 }
 
 .messageAccent {
   margin-left: -18px;
-  padding-top: 120px;
 }
 
 footer {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 /* ---------------------------------------------------------------------
@@ -376,18 +442,14 @@ footer {
   #contactSection {
     margin-top: 210px;
   }
-
-  .navRight nav {
-    padding-left: 50px;
-  }
 }
 
 /* ---------------------------------------------------------------------
     max-width: 895px
   ---------------------------------------------------------------------- */
-  @media only screen and (max-width: 895px) {
+@media only screen and (max-width: 895px) {
   #contactSection {
-    margin-top: 160px;
+    margin-top: 180px;
   }
 
   footer {
@@ -403,7 +465,7 @@ footer {
 /* ---------------------------------------------------------------------
     max-width: 768px
   ---------------------------------------------------------------------- */
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
   html {
     height: 2020px;
@@ -484,7 +546,7 @@ footer {
   }
 
   #playSection {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   #bioSection {
@@ -501,7 +563,7 @@ footer {
   }
   
   #contactSection {
-    margin-top: 150px;
+    margin-top: 130px;
   }
   
   .contact form {
@@ -528,8 +590,413 @@ footer {
 }
 
 /* ---------------------------------------------------------------------
-    max-width: 320px
+    max-width: 730px
   ---------------------------------------------------------------------- */
-  @media only screen and (max-width: 320) {
+@media only screen and (max-width: 730px) {
+  #contactSection {
+    margin-top: 105px;
+  }
+}
+/* ---------------------------------------------------------------------
+    max-width: 650px
+  ---------------------------------------------------------------------- */
+  @media only screen and (max-width: 650px) {
+    main nav {
+      font-size: 20px;
+    }
+    
+    .sectionHeader {
+      font-size: 24px;
+    }
+    
+    .sectionHeader .accent {
+      font-size: 22px;
+    }
+
+    .content {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* Sections */
+  #codeSection {
+    margin-top: 20px;
+  }
+
+  #solveSection {
+    margin-top: 120px;
+  }
+
+  #playSection {
+    margin-top: 120px;
+  }
+
+  #bioSection {
+    margin-top: 60px;
+  }
+
+  .bio {
+    font-size: 20px;
+  }
+
+  #contactSection {
+    margin-top: 140px;
+  }
+
+  .contact form {
+    font-size: 20px; 
+    padding-top: 10px;
+  }
+
+  #nameInput {
+    width: 71%;
   }
   
+  #emailInput {
+    width: 69%;
+  }
+    
+  #messageInput {
+    font-size: 20px; 
+    height: 4em;
+    width: 65%;
+  }
+
+  .messageAccent {
+    margin-left: -13px;
+    padding-top: 120px;
+  }
+}
+
+/* ---------------------------------------------------------------------
+    max-width: 560px
+  ---------------------------------------------------------------------- */
+  @media only screen and (max-width: 565px) {
+    footer {
+      margin-top: 10px;
+    }
+}
+  
+/* ---------------------------------------------------------------------
+    max-width: 480px
+  ---------------------------------------------------------------------- */
+  @media only screen and (max-width: 480px) {
+    .menuBar .menu {
+      font-size: 20px;
+    }
+    
+
+    main nav {
+      font-size: 16px;
+    }
+    
+    .sectionHeader {
+      font-size: 20px;
+    }
+    
+    .sectionHeader .accent {
+      font-size: 18px;
+    }
+
+    .content {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+
+  /* Sections */
+  #codeSection {
+    margin-top: 45px;
+  }
+
+  #solveSection {
+    margin-top: 150px;
+  }
+
+  #playSection {
+    margin-top: 170px;
+  }
+
+  #bioSection {
+    margin-top: 90px;
+  }
+
+  .bio {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  #contactSection {
+    margin-top: 220px;
+  }
+  
+
+  .contact form {
+    font-size: 16px; 
+    padding-top: 10px;
+  }
+
+  input {
+    font-size: 16px; 
+  }  
+
+  #nameInput {
+    width: 71%;
+  }
+  
+  #emailInput {
+    width: 69%;
+  }
+    
+  #messageInput {
+    font-size: 16px; 
+    height: 5em;
+  }
+
+  .messageAccent {
+    margin-left: -12px;
+  }
+
+  footer {
+    margin-top: 40px;
+  }
+}
+  
+/* ---------------------------------------------------------------------
+    max-width: 455px
+  ---------------------------------------------------------------------- */
+  @media only screen and (max-width: 455px) {
+    footer {
+      margin-top: 20px;
+    }
+  }  
+  
+/* ---------------------------------------------------------------------
+  max-width: 390px
+---------------------------------------------------------------------- */
+@media only screen and (max-width: 390px) {
+  #playSection {
+    margin-top: 140px;
+  }
+
+  #contactSection {
+    margin-top: 180px;
+  }
+
+
+  footer {
+    margin-top: 50px;
+  }
+}  
+  
+/* ---------------------------------------------------------------------
+  max-width: 380px
+---------------------------------------------------------------------- */
+@media only screen and (max-width: 380px) {  
+  #codeNarrow {
+    display: block;
+    text-align: right;
+  }
+
+  #playNarrow {
+    display: block;
+    text-align: right;
+  }
+
+  #codeWide {
+    display: none;
+  }
+
+  #playWide {
+    display: none;
+  }  
+
+  .content {
+    width: 63%;
+    margin-top: 10px;
+  }
+
+  #playSection {
+    margin-top: 175px;
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+}  
+
+/* ---------------------------------------------------------------------
+  max-width: 350px
+---------------------------------------------------------------------- */
+@media only screen and (max-width: 350px) {
+  .navRight nav {
+    padding-left: 10px;
+  }
+
+  .navLeft nav {
+    padding-left: 16px;
+    padding-top: 20px;
+  }
+
+  .navLeft .content {
+    padding-left: 16px;
+  }
+
+  .contentNavDivider {
+    width: 2%;
+  }
+
+  footer {
+    margin-top: 10px;
+  }
+}  
+
+/* ---------------------------------------------------------------------
+  max-width: 325px
+---------------------------------------------------------------------- */
+@media only screen and (max-width: 325px) {
+  #contactSection {
+    margin-top: 150px;
+  }
+
+  footer {
+    margin-top: 5;
+  }
+}
+
+/* ---------------------------------------------------------------------
+    max-width: 300px
+  ---------------------------------------------------------------------- */
+@media only screen and (max-width: 300px) {
+  html {
+    height: 1253px;
+  }
+
+  header {
+    margin-top: -1253px;
+  }
+  
+  .background {
+    background-image:url(../images/MobileTris.png);
+  }  
+
+  /* Header */
+  .menuBar .imageDiv {
+    margin: 4 0 0 16px;
+  }  
+
+  .menuBar .logo {
+    height: 40px;
+  }
+
+  .menuBar .menu {
+    font-size: 16px;
+    line-height: 16px;
+    margin-right: 5%;
+  }
+
+  .separatorBlue {
+    height: 6px;
+  }
+  
+  .separatorGreen {
+    height: 3px;
+  }
+
+  /* Banner */
+  .banner {
+    margin: 15px 0 0 16px;
+  } 
+  
+  .banner h1 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  
+  .banner h1 .accent {
+    font-size: 24px;
+  }
+  
+  nav {
+    font-size: 20px; 
+  }
+
+  /* Main */
+  .sectionHeader {
+    font-size: 24px;
+  }
+  
+  .sectionHeader .accent {
+    font-size: 20px;
+  }
+
+  /* ---------------------------------------------------------------------
+      Sections  
+    ---------------------------------------------------------------------- */
+  #codeSection {
+    margin-top: 0;
+  }
+
+  #solveSection {
+    margin-top: 60px;
+  }
+
+  #playSection {
+    margin-top: 55px;
+  }
+
+  #bioSection {
+    margin-top: 0;
+  }
+
+  .headshotDiv img {
+    height: 80px;
+    margin-top: 70px;
+  }
+
+  .p {
+    padding: 10px 0;
+  }  
+
+  .bio {
+    max-width: 50%;
+    margin: 16px;
+  }
+  
+  #contactSection {
+    margin-top: 75px;
+  }
+  
+  .contact {
+    padding-left: 16px;
+  }
+
+  .contact form {
+    font: bold 16px var( --monoFF ); 
+    padding-top: 8px;
+  }
+
+  input {
+    font-size: 14px; 
+  }
+
+
+  #nameInput {
+    width: 66.5%;
+  }
+  
+  #emailInput {
+    width: 63%;
+  }
+  
+  #messageInput {
+    width: 56%;
+    height: 3em;
+  }
+
+  .messageAccent {
+    margin-left: -10px;
+  } 
+  
+
+}  
